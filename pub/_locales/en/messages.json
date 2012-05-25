@@ -1,0 +1,31 @@
+{
+    "extDescription": {
+        "message": "Repeat HTML5 videos on certain pages with video embedded. Make sure the video you are watching is HTML5; or the repeat is not supported. Currently support YouTube. For issues and feature requests, mail to: acee06.weichen@gmail.com.",
+        "description": "Extension description for manifest.json."
+    },
+    
+    "ckbLabel": {
+        "message": "HTML5 Auto Repeat",
+        "description": "The display label for checkbox."
+    },
+    
+    "optionsTitle": {
+        "message": "HTML5 Auto Repeat Options",
+        "description": "The options page."
+    },
+    
+    "optionStartLabel": {
+        "message": "Make the HTML5 Auto Repeat checkbox checked when loaded.",
+        "description": "The start option label."
+    },
+    
+    "optionSave": {
+        "message": "Save",
+        "description": "The save button."
+    },
+    
+    "saveSuccess": {
+        "message": "The options are saved successfully.",
+        "description": "The message popped to show when the options are saved successfully."
+    }
+}

@@ -1,0 +1,28 @@
+{
+   "content_scripts": [ {
+      "js": [ "js/jquery.min.js", "videorepeat.js" ],
+      "matches": [ "http://*.youtube.com/*", "https://*.youtube.com/*" ],
+      "run_at": "document_end"
+   } ],
+
+   "description": "__MSG_extDescription__",
+   "default_locale": "en",
+   
+   "background_page": "background.html",
+   "options_page": "options.html",
+   
+   "icons": {
+      "16": "icons/16.png",
+      "22": "icons/22.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+   },
+   
+   "permissions": [
+       "<all_urls>"
+   ],
+
+   "name": "HTML5 Video Repeat (\u6d17\u8166\u5faa\u74b0)",
+   "version": "0.1"
+}
