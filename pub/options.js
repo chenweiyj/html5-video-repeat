@@ -23,3 +23,8 @@ function restore_options() {
 }
 
 init();
+document.addEventListener('DOMContentLoaded', function () {
+    restore_options();
+    $("#save").click(save_options);
+//    document.getElementById('save').addEventListener('click', save_options);
+});

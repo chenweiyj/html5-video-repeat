@@ -1,4 +1,6 @@
 {
+   "manifest_version": 2,
+   
    "content_scripts": [ {
       "js": [ "js/jquery.min.js", "videorepeat.js" ],
       "matches": [ "http://*.youtube.com/*", "https://*.youtube.com/*" ],
@@ -8,7 +10,10 @@
    "description": "__MSG_extDescription__",
    "default_locale": "en",
    
-   "background_page": "background.html",
+   "background": {
+     "page": "background.html"
+   }, 
+   
    "options_page": "options.html",
    
    "icons": {
@@ -20,7 +25,8 @@
    },
    
    "permissions": [
-       "<all_urls>"
+      "http://*/*",
+      "https://*/*"
    ],
 
    "name": "HTML5 Video Repeat (\u6d17\u8166\u5faa\u74b0)",

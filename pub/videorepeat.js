@@ -47,11 +47,12 @@ function init() {
 
 function loopVideo() {
     var video = getVideo();
-    var player = video[0];
+    var player = null;
     
     if ($("#video-repeat").is(":checked")) {
         video.bind("ended", function () {
-            player.play();
+            player = window.yt.config_.PLAYER_REFERENCE;
+            player.playVideo();
         });
     }
     else {
@@ -64,7 +65,7 @@ function main() {
     if (isHTML5()) {
         init();
     
-        chrome.extension.sendRequest({
+        chrome.extension.sendMessage({
             method: "getLocalStorage", 
             key: "isRepeat"
         }, function(response) {
